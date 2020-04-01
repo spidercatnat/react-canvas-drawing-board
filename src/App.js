@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Canvas } from "responsive-react-canvas-hoc";
 
-class HelloCanvas extends Component {
+class DrawingBoard extends Component {
   mouse = {
     pos: [0, 0],
     down: false
@@ -86,7 +86,7 @@ class HelloCanvas extends Component {
 }
 
 function App() {
-  return <HelloCanvas dimensions={{ width: "100vh", height: "100vh" }} />;
+  return <DrawingBoard dimensions={{ width: "100vh", height: "100vh" }} />;
 }
 
 export default App;
